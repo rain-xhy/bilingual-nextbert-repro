@@ -54,7 +54,7 @@
 
 每种语言的主要任务开发集包含40条查询或序列，检索候选池为320篇固定文档，重排使用固定BM25前十候选。这些是受控开发子集上的结果，指标可通过 [CSV](results/dev_metrics.csv) 和 [筛选摘要](results/selection_summary.json) 直接检查。
 
-## 复现流程
+## 流程
 
 ### 1 准备环境
 
@@ -115,22 +115,4 @@ repro/release_manifest.json  发布文件校验与来源说明
 results/                精简开发集得分与联合筛选摘要
 assets/                 方法示意与README视觉资源
 ```
-
-## 复现记录
-
-模型固定为 `jhu-clsp/mmBERT-base` 的 `c5955035435e2bf121cde7f3c8863ef52ff35d82`。主体实现来自已完成实验的源码快照，发布调整仅涉及MLDR版本参数、默认下载端点与独立核验工具，详见发布清单。原始数据和训练权重在复现时由数据准备与训练流程生成。
-
-完整训练和评估依赖GPU及上游数据下载。离线测试验证实现与协议，数据摘要验证样本构造，开发集CSV提供可比较的结果参照。不同设备的浮点执行可能产生数值差异，建议同时检查数据摘要、训练暴露、配置和指标趋势。
-
-本发布已通过20项离线单元测试，以及微型随机模型的端到端结构集成检查。后者覆盖基线与桥接的8192词元MLM反向传播、四类监督任务、冻结探针、证据诊断、联合筛选和结构检查点重载。GitHub Actions在推送后自动执行发布校验和单元测试。
-
-## 研究基础
-
-本实现复用现代多语言编码器与通用参数高效适配方法，并在其上研究文档级残差桥接及完整结构组合。基础模型和相关方法的来源如下。
-
-- [ModernBERT](https://aclanthology.org/2025.acl-long.127/)
-- [mmBERT](https://huggingface.co/jhu-clsp/mmBERT-base)
-- [LoRA](https://arxiv.org/abs/2106.09685)
-- [Gradient Cache](https://aclanthology.org/2021.repl4nlp-1.31/)
-- [MLDR](https://huggingface.co/datasets/Shitao/MLDR)
 
