@@ -1,0 +1,11 @@
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.11.0
+datasets==4.3.0
+sentencepiece==0.2.1
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+pyarrow==21.0.0
+# Install a CUDA-enabled PyTorch build appropriate for the training host separately.
+# The local smoke environment reuses the existing CPU PyTorch installation.

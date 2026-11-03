@@ -1,0 +1,27 @@
+{
+  "model": "jhu-clsp/mmBERT-base",
+  "revision": "c5955035435e2bf121cde7f3c8863ef52ff35d82",
+  "task": "mlm",
+  "seed": 42,
+  "lora_rank": 8,
+  "lr": 0.0002,
+  "accumulation": 1,
+  "gradient_checkpointing": true,
+  "attention": "sdpa",
+  "masking": "token",
+  "mlm_logit_chunk": 64,
+  "temperature": 0.05,
+  "query_length": 128,
+  "max_length": 8192,
+  "architecture_name": "w128_g3_b1",
+  "architecture_overrides": {
+    "local_attention": 128,
+    "global_attn_every_n_layers": 3
+  },
+  "document_bridge": {
+    "chunk_size": 256,
+    "bottleneck": 128,
+    "heads": 4,
+    "mode": "global"
+  }
+}

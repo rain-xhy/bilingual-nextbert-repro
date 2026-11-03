@@ -1,0 +1,54 @@
+{
+  "dataset": "Shitao/MLDR",
+  "revision": "d67138e705d963e346253a80e59676ddb418810a",
+  "seed": 42,
+  "files": [
+    {
+      "url": "https://huggingface.co/datasets/Shitao/MLDR/resolve/d67138e705d963e346253a80e59676ddb418810a/mldr-v1.0-zh/train.jsonl.gz",
+      "sha256": "cdb7b104e9ccbbb6f032a7d4cb58abad71655a07b492bccdc56db20b7b95e846"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Shitao/MLDR/resolve/d67138e705d963e346253a80e59676ddb418810a/mldr-v1.0-zh/dev.jsonl.gz",
+      "sha256": "70d4b03a6862e5725311cb115de2d6c203e341d0608e18c2c5d6386920a7742f"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Shitao/MLDR/resolve/d67138e705d963e346253a80e59676ddb418810a/mldr-v1.0-zh/test.jsonl.gz",
+      "sha256": "dadfb6a06cb80bc63be560f5d9beb49a98c9d6b95d85023b2470d18e047fb24f"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Shitao/MLDR/resolve/d67138e705d963e346253a80e59676ddb418810a/mldr-v1.0-en/train.jsonl.gz",
+      "sha256": "6a025f28e3f03bf0c07b00deceb94b7a269f3dc20ff4027b7eab5ddf7202cee1"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Shitao/MLDR/resolve/d67138e705d963e346253a80e59676ddb418810a/mldr-v1.0-en/dev.jsonl.gz",
+      "sha256": "d858aff311937ba2c46309e7be8cecea8e848ae906f8c207cd84cf1fd44b3b15"
+    },
+    {
+      "url": "https://huggingface.co/datasets/Shitao/MLDR/resolve/d67138e705d963e346253a80e59676ddb418810a/mldr-v1.0-en/test.jsonl.gz",
+      "sha256": "e3d79c5cb2c5c635aa9b7908e636cdbc99bb76db5ebe65cbff96acd4a10204c0"
+    }
+  ],
+  "zh": {
+    "original_train": 10000,
+    "filtered_train": 3581,
+    "selected_train": 2000
+  },
+  "en": {
+    "original_train": 10000,
+    "filtered_train": 3460,
+    "selected_train": 2000
+  },
+  "outputs": {
+    "zh_dev.jsonl": "c1d37dca79f9d90fe949b2716573112cd4188bb980acdbdaf7ed2fdf60e2d61e",
+    "zh_dev_pool.jsonl": "19bda44735b2e58c84ec77b6733068be94ee3e71ff2a706e76e4ae96dd2cad22",
+    "zh_test.jsonl": "6b3a448138b3ab58e5cecbcfe099e9adafa18a3ca2fa5b62442e43e0cc45add6",
+    "zh_test_pool.jsonl": "9ddf67b1209e3e969b971fe0e3620a2226e8360e4ca1d3ae1f096df08eaa89eb",
+    "en_dev.jsonl": "ad015d233b2ba77cb911a6bc0796fa1e90eaefefbf00012aadd15cea155a2e2f",
+    "en_dev_pool.jsonl": "43cd76ce379d5835e9dbb857c121cc9ad217228286d2e96b30283cf260a418c8",
+    "en_test.jsonl": "7ea7e50b60f61ce2c868235d966c887a365992ed6ce7f61a317eaced8912c10d",
+    "en_test_pool.jsonl": "f3c43486da3a8622f63c75a0cab2d137589edf1a3c98acf2c2cf96d0af44db14",
+    "train.jsonl": "97a81c5f1bdc1ea21bca08997a2122eecb3baa041b2b89feaa1c64d033e50935",
+    "mlm_train.jsonl": "017571de3cfaa012954dc6467c0065922ee05e68d871100b8bc53495d0bcc808"
+  },
+  "pool_warning": "*_pool.jsonl is a judged candidate subset, not the official corpus"
+}

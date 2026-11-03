@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.cache/
+data/
+runs/
+third_party/
+*.safetensors
+*.pt
+*.bin
+*.partial
+*.log
+artifacts/*
+!artifacts/model_lock.json
+!artifacts/dataset_lock.json
+.env
+.env.*

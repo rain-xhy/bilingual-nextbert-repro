@@ -1,0 +1,41 @@
+{
+  "model": "jhu-clsp/mmBERT-base",
+  "revision": "c5955035435e2bf121cde7f3c8863ef52ff35d82",
+  "length": 8192,
+  "sources": {
+    "rajpurkar/squad": "7b6d24c440a36b6815f21b70d25016731768db1f",
+    "hfl/cmrc2018": "137f2c45a24275fb68f6961c4d357f46288886aa"
+  },
+  "rejections": {
+    "en_train": {
+      "accepted": 400,
+      "rejected": 0
+    },
+    "en_dev": {
+      "accepted": 100,
+      "rejected": 0
+    },
+    "en_test": {
+      "accepted": 100,
+      "rejected": 0
+    },
+    "zh_train": {
+      "accepted": 400,
+      "rejected": 0
+    },
+    "zh_dev": {
+      "accepted": 100,
+      "rejected": 0
+    },
+    "zh_test": {
+      "accepted": 100,
+      "rejected": 0
+    }
+  },
+  "files": {
+    "train.jsonl": "8cafcc82e1b239a42e9d9eeba977cc45c8c537e7f177ec9cf6c106b24c282ee2",
+    "dev.jsonl": "5fb5ae2f0c24294c9a70670c8c7611c0594e65004332b7fd911614f4faf19bff",
+    "test.jsonl": "e485f08574a620c29da233b06628b8d5ab69ae703d3f94813e776bb9c2c0f3d3"
+  },
+  "limitations": "Answer-string absence is a filter, not a proof of semantic irrelevance. Manually audit sampled negatives."
+}

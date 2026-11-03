@@ -1,0 +1,107 @@
+{
+  "split": "dev",
+  "seed": 42,
+  "status": "no_admissible_model",
+  "selected": null,
+  "highest_mean_candidate": "w128_g6_b1",
+  "selection_policy": {
+    "max_task_drop": 0.01,
+    "max_retention_drop": 0.01,
+    "max_position_range_increase": 0.01,
+    "max_evidence_margin_drop": 0.01,
+    "max_eval_time_ratio": 1.5,
+    "max_peak_gb": 30.0,
+    "minimum_mean_gain": 0.002,
+    "required_seeds": 1
+  },
+  "assessments": {
+    "w128_g3_b0": {
+      "eligible": false,
+      "mean_gain": 0.0,
+      "reasons": [
+        "retention regression: retention_retrieval_classification_en",
+        "retention regression: retention_retrieval_ner_en",
+        "retention regression: retention_mlm_classification_zh",
+        "retention regression: retention_retrieval_classification_zh"
+      ]
+    },
+    "w128_g3_b1": {
+      "eligible": false,
+      "mean_gain": 0.07649183440984589,
+      "reasons": [
+        "task regression: classification_zh",
+        "retention regression: retention_mlm_classification_zh",
+        "retention regression: retention_retrieval_classification_zh"
+      ]
+    },
+    "w128_g6_b0": {
+      "eligible": false,
+      "mean_gain": 0.051537250934713695,
+      "reasons": [
+        "task regression: rerank_en",
+        "task regression: classification_en",
+        "retention regression: retention_mlm_classification_en",
+        "retention regression: retention_retrieval_ner_en",
+        "retention regression: retention_mlm_classification_zh",
+        "retention regression: retention_retrieval_classification_zh"
+      ]
+    },
+    "w128_g6_b1": {
+      "eligible": false,
+      "mean_gain": 0.11454111532661945,
+      "reasons": [
+        "task regression: classification_zh",
+        "retention regression: retention_mlm_classification_en",
+        "retention regression: retention_retrieval_ner_en",
+        "retention regression: retention_retrieval_classification_zh",
+        "retention regression: retention_retrieval_ner_zh"
+      ]
+    },
+    "w256_g3_b0": {
+      "eligible": false,
+      "mean_gain": 0.037077107900514925,
+      "reasons": [
+        "task regression: rerank_en",
+        "task regression: classification_en",
+        "retention regression: retention_retrieval_classification_en",
+        "retention regression: retention_retrieval_ner_en",
+        "retention regression: retention_mlm_classification_zh",
+        "retention regression: retention_retrieval_classification_zh"
+      ]
+    },
+    "w256_g3_b1": {
+      "eligible": false,
+      "mean_gain": -0.010846084258207623,
+      "reasons": [
+        "task regression: retrieval_en",
+        "task regression: classification_en",
+        "task regression: retrieval_zh",
+        "task regression: classification_zh",
+        "retention regression: retention_mlm_classification_en",
+        "retention regression: retention_retrieval_classification_en",
+        "retention regression: retention_mlm_classification_zh",
+        "retention regression: retention_retrieval_classification_zh"
+      ]
+    },
+    "w256_g6_b0": {
+      "eligible": false,
+      "mean_gain": 0.07714594920935805,
+      "reasons": [
+        "task regression: classification_en",
+        "task regression: rerank_zh",
+        "retention regression: retention_mlm_classification_zh",
+        "retention regression: retention_retrieval_classification_zh"
+      ]
+    },
+    "w256_g6_b1": {
+      "eligible": false,
+      "mean_gain": 0.08531867261943651,
+      "reasons": [
+        "task regression: classification_zh",
+        "retention regression: retention_retrieval_ner_en",
+        "retention regression: retention_mlm_classification_zh",
+        "retention regression: retention_retrieval_classification_zh"
+      ]
+    }
+  }
+}

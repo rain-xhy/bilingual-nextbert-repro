@@ -1,0 +1,79 @@
+{
+  "model": "jhu-clsp/mmBERT-base",
+  "revision": "c5955035435e2bf121cde7f3c8863ef52ff35d82",
+  "args": {
+    "mldr": "data/mldr",
+    "output": "data/multitask",
+    "train_per_language": 800,
+    "dev_per_language": 40,
+    "test_per_language": 100,
+    "packs_per_language": 64,
+    "length": 8192,
+    "seed": 42
+  },
+  "datasets": {
+    "facebook/xnli": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+    "unimelb-nlp/wikiann": "f0a3be6dc5564c0cc4150bb660144800a1f539d4"
+  },
+  "labels": {
+    "classification": [
+      "entailment",
+      "neutral",
+      "contradiction"
+    ],
+    "ner": [
+      "O",
+      "B-PER",
+      "I-PER",
+      "B-ORG",
+      "I-ORG",
+      "B-LOC",
+      "I-LOC"
+    ]
+  },
+  "files": {
+    "en_dev_queries.jsonl": "ff1147ef4ab452f67e1965bb109802779428e933f0527c75aa02a94ccebeb28b",
+    "en_dev_pool.jsonl": "a1a58c86259a2c6d5d111bb92de90bcb909200ecb8cf71f3cc3e277f3fbf1f44",
+    "en_test_queries.jsonl": "ee61a18abd93abdf7e1cffeb233b1f8cfa1b90d249c1413469fcab5e904c947f",
+    "en_test_pool.jsonl": "e3143776c747a669657e30fedc619f1f8ac2ed0366a32c6cfbd7e46bd32ac79f",
+    "zh_dev_queries.jsonl": "97393c6d9dd80f84fa8de8fd6bfb62a47a89ed20ddb05c21a06d1dcfff089bfb",
+    "zh_dev_pool.jsonl": "aaed84897d1fc62a5ef5c2200740584573b2d21f4294739d904ca3ad97fe0fdb",
+    "zh_test_queries.jsonl": "cd1d0c94e773f73eac321987b6df2a1e8a96ccc66625fa20a297d8ac3e1adc69",
+    "zh_test_pool.jsonl": "623467cad29410f0023ae3e0e8087a8770df27dff5652009c3094e38cd329b21",
+    "retrieval_train.jsonl": "953b7252f53c1294d84c4d2b30ee364b68cad55b0ccdb19cd3c911c46a74bbd4",
+    "mlm_train.jsonl": "468d9003b91482b504c7bcac906c09c8f873ae013bde82759db661313840df37",
+    "classification_en_dev.jsonl": "5d226406dc07b01701f3390d44e76247f4092d61909262781cd8b68b0ca6c273",
+    "classification_en_test.jsonl": "b048d1ef5f24bed69a0aec97ac8cf61c0d29e886e4a85570c39c2d884b6ec52d",
+    "classification_zh_dev.jsonl": "3810a06a953a5ff801011f2e22414ef9d663b1fb14dd869023282e2b7b49e9a1",
+    "classification_zh_test.jsonl": "d68a5f392051e7141270f60c48d3ddc4712ac2a608ce4d61b763b455d8f681ac",
+    "classification_train.jsonl": "3d4769f2942eda51d81b75caf7b68b6033fb5f48cbe73e0deffb45ec5118ea4d",
+    "ner_en_dev.jsonl": "8599046ee0ac3b5f32be09b61fb3de4809eab60ae2144d754f9f1d7672485c36",
+    "ner_en_test.jsonl": "911ee2677bc5591c3832fa2d0a52bbb1d9c329279242ed8d91f4a7228e77b83d",
+    "ner_zh_dev.jsonl": "7d3a21de802bfd591d9938c86b7ae8376758c3df194f5ec402bacc1ff172f410",
+    "ner_zh_test.jsonl": "325d7ebc637377d2378fbbbb9eac78631f83b140827db0e4b287b1eed251bdb4",
+    "ner_train.jsonl": "b92bfca0938d7029136551f5ad907fb3bbfbda595bfe59b869c45865e693e2f3"
+  },
+  "counts": {
+    "en_dev_queries.jsonl": 40,
+    "en_dev_pool.jsonl": 320,
+    "en_test_queries.jsonl": 100,
+    "en_test_pool.jsonl": 796,
+    "zh_dev_queries.jsonl": 40,
+    "zh_dev_pool.jsonl": 320,
+    "zh_test_queries.jsonl": 100,
+    "zh_test_pool.jsonl": 799,
+    "retrieval_train.jsonl": 1600,
+    "mlm_train.jsonl": 128,
+    "classification_en_dev.jsonl": 40,
+    "classification_en_test.jsonl": 100,
+    "classification_zh_dev.jsonl": 40,
+    "classification_zh_test.jsonl": 100,
+    "classification_train.jsonl": 1600,
+    "ner_en_dev.jsonl": 40,
+    "ner_en_test.jsonl": 100,
+    "ner_zh_dev.jsonl": 40,
+    "ner_zh_test.jsonl": 100,
+    "ner_train.jsonl": 1600
+  },
+  "mldr_manifest_sha256": "e28d491df7180d1f16bd8b9b6e9ebc5cace50c810f07c7482be2c96132896ebc"
+}
